@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tcms-angular';
+  company_name:String ="Turntabl";
 }
