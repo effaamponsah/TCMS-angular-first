@@ -13,6 +13,10 @@ import { HomeComponent } from "./screens/home/components/home/home.component";
 import { ClientCardComponent } from "./screens/clients/components/client-card/client-card.component";
 import { ClientsScreenComponent } from "./screens/clients/clients-screen/clients-screen.component";
 import { HttpClientModule } from "@angular/common/http";
+import { ClientscreenComponent } from "./screens/clients/clientscreen/clientscreen.component";
+import { ClientformComponent } from "./screens/clients/components/clientform/clientform.component";
+import { ReactiveFormsModule } from "@angular/forms";
+
 // const appRoutes: Routes = [
 //   // { path: "customer", component: CustomersComponent },
 //   // { path: "projects", component: ProjectsComponent },
@@ -28,13 +32,17 @@ import { HttpClientModule } from "@angular/common/http";
     TestingComponent,
     HomeComponent,
     ClientCardComponent,
-    ClientsScreenComponent
+    ClientsScreenComponent,
+    ClientscreenComponent,
+    ClientformComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    // ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

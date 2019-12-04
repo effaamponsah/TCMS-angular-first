@@ -3,6 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Client } from "../client";
 import { Observable } from "rxjs";
 import { ClientserviceService } from "src/app/clientservice.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-clients-screen",
@@ -11,27 +12,19 @@ import { ClientserviceService } from "src/app/clientservice.service";
 })
 export class ClientsScreenComponent implements OnInit {
   results = [];
-  constructor(private clientService: ClientserviceService) {}
+  constructor(
+    private clientService: ClientserviceService,
+    private router: Router
+  ) {}
   customersObservable: Observable<Client[]>;
-  c =[]
+  retrievedClients: Array<Client> = [];
   ngOnInit() {
-    // this.results = this.http.get<Client>("https://boiling-bastion-30474.herokuapp.com/clients")
-    // alert(JSON.stringify(this.getClients()));
-    // this.getClients()
-    // this.customersObservable = this.http
-    // .get<Client[]>("https://boiling-bastion-30474.herokuapp.com/clients").subscribe(d =>console.log(d))
-    console.log(
-      this.clientService.getClients().subscribe(client => console.log(client))
-    );
+    this.clientService.getClients().subscribe(client => {
+      this.retrievedClients = client;
+    });
   }
-  // getClients(): Observable<Client[]> {
-  //   return this.http.get<Client[]>(
-  //     "http://localhost:5050"
-  //   ).subscribe(client =>console.log(client))
-  // }
-  clients = [
-    { id: 1, name: "Dennis" },
-    { id: 2, name: "James" },
-    { id: 3, name: "Bill" }
-  ];
+
+  addClient() {
+    this.router.navigate(["/clients/add"]);
+  }
 }

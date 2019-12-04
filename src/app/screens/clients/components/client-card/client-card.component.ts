@@ -6,7 +6,8 @@ import { Client } from "../../client";
   styleUrls: ["./client-card.component.css"]
 })
 export class ClientCardComponent implements OnInit {
-  @Input() customername: any;
+  @Input() customername: String;
+  @Input() customerEmail: String;
   @Input() client: Client;
   constructor() {}
 
@@ -19,6 +20,4 @@ export class ClientCardComponent implements OnInit {
       address: "String"
     }
   ];
-  dummy = "Dennis Effa";
-  name = this.dummy;
 }

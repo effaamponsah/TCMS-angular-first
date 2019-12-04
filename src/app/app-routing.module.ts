@@ -6,7 +6,9 @@ import { HomeComponent } from "./screens/home/components/home/home.component";
 import { ClientCardComponent } from "./screens/clients/components/client-card/client-card.component";
 import { CustomersComponent } from "./customers/customers.component";
 import { ProjectsComponent } from "./projects/projects.component";
-import { ClientsScreenComponent } from './screens/clients/clients-screen/clients-screen.component';
+import { ClientsScreenComponent } from "./screens/clients/clients-screen/clients-screen.component";
+import { ClientscreenComponent } from "./screens/clients/clientscreen/clientscreen.component";
+import { ClientformComponent } from "./screens/clients/components/clientform/clientform.component";
 
 const routes: Routes = [
   { path: "hello", component: TestingComponent },
@@ -15,7 +17,8 @@ const routes: Routes = [
     component: CustomersComponent,
     children: [
       { path: "", component: ClientsScreenComponent },
-      { path: "1", component: ClientCardComponent }
+      { path: "1", component: ClientscreenComponent },
+      { path: "add", component: ClientformComponent }
     ]
   },
   { path: "project", component: ProjectsComponent },

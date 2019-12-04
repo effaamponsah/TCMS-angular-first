@@ -8,10 +8,9 @@ import { Observable } from "rxjs";
 })
 export class ClientserviceService {
   constructor(private http: HttpClient) {}
-  // private clientsUrl = "http://127.0.0.1:5000/";
-  private clientsUrl = "https://boiling-bastion-30474.herokuapp.com/clients";
+  private clientsUrl = "https://boiling-bastion-30474.herokuapp.com";
 
   getClients(): Observable<Client[]> {
-    return this.http.get<Client[]>(this.clientsUrl);
+    return this.http.get<Client[]>(this.clientsUrl + "/clients");
   }
 }
