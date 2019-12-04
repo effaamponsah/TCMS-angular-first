@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-
+import { Client } from "../../client";
 @Component({
   selector: "app-client-card",
   templateUrl: "./client-card.component.html",
@@ -7,9 +7,16 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class ClientCardComponent implements OnInit {
   @Input() customername: any;
+  @Input() client: Client;
   constructor() {}
 
   ngOnInit() {}
-  dummy ="Dennis Effa"
+  dummyClient: Array<Client> = [
+    {
+      id: 1,
+      name: "Dennis"
+    }
+  ];
+  dummy = "Dennis Effa";
   name = this.dummy;
 }
