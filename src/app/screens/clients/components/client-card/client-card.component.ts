@@ -13,8 +13,10 @@ export class ClientCardComponent implements OnInit {
   ngOnInit() {}
   dummyClient: Array<Client> = [
     {
-      id: 1,
-      name: "Dennis"
+      name: "String",
+      phone: "String",
+      email: "String",
+      address: "String"
     }
   ];
   dummy = "Dennis Effa";

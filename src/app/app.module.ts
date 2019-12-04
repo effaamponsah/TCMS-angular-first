@@ -12,7 +12,7 @@ import { TestingComponent } from "./testing/testing.component";
 import { HomeComponent } from "./screens/home/components/home/home.component";
 import { ClientCardComponent } from "./screens/clients/components/client-card/client-card.component";
 import { ClientsScreenComponent } from "./screens/clients/clients-screen/clients-screen.component";
-
+import { HttpClientModule } from "@angular/common/http";
 // const appRoutes: Routes = [
 //   // { path: "customer", component: CustomersComponent },
 //   // { path: "projects", component: ProjectsComponent },
@@ -30,7 +30,12 @@ import { ClientsScreenComponent } from "./screens/clients/clients-screen/clients
     ClientCardComponent,
     ClientsScreenComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
