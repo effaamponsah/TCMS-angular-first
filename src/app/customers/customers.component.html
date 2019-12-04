@@ -24,6 +24,8 @@
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- <link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
 </head>
 
 <body id="page-top">
@@ -57,8 +59,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" routerLink="/" routerLinkActive="active" data-toggle="collapse"
-                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
                     <i class="fa fa-users"></i>
                     <span>Clients</span>
                 </a>
@@ -127,7 +129,7 @@
                             </div>
                         </div>
                     </form>
-                    <app-dummy></app-dummy>
+
                     <!-- <button type="button" class="btn btn-primary-outline pull-right" (click)="btnClick();"><i
                             class="fa fa-plus"></i> Add</button> -->
                     <!-- Topbar Navbar -->
@@ -167,198 +169,11 @@
                     </ul>
 
                 </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    
-
-                    <!-- Dont touch -->
-                    <div class="card-deck" style="width: 68rem;">
-
-                        <div class="card">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="position:absolute">
-                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Client actions:</div>
-                                <a class="dropdown-item" href="#">Edit Details</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" style="color:red">Remove client</a>
-                            </div>
-                            <img src="img/av3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional
-                                    content. This content is a little bit longer.</p>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="position:absolute">
-                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-white-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Client actions:</div>
-                                <a class="dropdown-item" href="#">Edit Details</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" style="color:red">Remove client</a>
-                            </div>
-                            <img src="img/av2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="position:absolute">
-                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Client actions:</div>
-                                <a class="dropdown-item" href="#">Edit Details</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" style="color:red">Remove client</a>
-                            </div>
-                            <img src="img/av3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional
-                                    content. This card has even longer content than the first to show that equal height
-                                    action.</p>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="position:absolute">
-                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-white-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Client actions:</div>
-                                <a class="dropdown-item" href="#">Edit Details</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" style="color:red">Remove client</a>
-                            </div>
-                            <img src="img/av2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
-
-
-
-                            <!-- Color System -->
-                            <!--<div class="row">
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-primary text-white shadow">
-                          <div class="card-body">
-                            Primary
-                            <div class="text-white-50 small">#4e73df</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-success text-white shadow">
-                          <div class="card-body">
-                            Success
-                            <div class="text-white-50 small">#1cc88a</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-info text-white shadow">
-                          <div class="card-body">
-                            Info
-                            <div class="text-white-50 small">#36b9cc</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-warning text-white shadow">
-                          <div class="card-body">
-                            Warning
-                            <div class="text-white-50 small">#f6c23e</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-danger text-white shadow">
-                          <div class="card-body">
-                            Danger
-                            <div class="text-white-50 small">#e74a3b</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="card bg-secondary text-white shadow">
-                          <div class="card-body">
-                            Secondary
-                            <div class="text-white-50 small">#858796</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-      
-                  </div>-->
-
-                            <div class="col-lg-6 mb-4">
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.container-fluid -->
-
-                </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
+                <router-outlet></router-outlet>
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2019</span>
+                            <span>Copyright &copy; Turntabl Ghana</span>
                         </div>
                     </div>
                 </footer>
@@ -368,11 +183,13 @@
             <!-- End of Content Wrapper -->
 
         </div>
-
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
     </div>
+
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="../../assets/js/sb-admin-2.min.js"></script>
 </body>
 
 </html>
