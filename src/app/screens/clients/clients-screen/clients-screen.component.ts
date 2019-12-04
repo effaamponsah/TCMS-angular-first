@@ -15,8 +15,8 @@ export class ClientsScreenComponent implements OnInit {
   ngOnInit() {
     // this.results = this.http.get<Client>("https://boiling-bastion-30474.herokuapp.com/clients")
     // alert(JSON.stringify(this.getClients()));
-    // this.customersObservable = this.http
-      // .get<Client[]>("https://boiling-bastion-30474.herokuapp.com/clients").subscribe(d =>console.log(d))
+    this.customersObservable = this.http
+      .get<Client[]>("https://boiling-bastion-30474.herokuapp.com/clients").subscribe(d =>console.log(d))
   }
   getClients(): Observable<Client[]> {
     return this.http.get<Client[]>(
