@@ -70,19 +70,23 @@
                         <!-- <a routerLink="/clients" class="btn-get-started scrollto">
                             <i class="fa fa-github fa-lg"></i> Login with Github</a> -->
                         <!-- <a href="/projects" class="btn-services scrollto">Projects</a> -->
-                        <!-- <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                        </a> -->
+                        <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=9925fb6388f7056be746"
+                            class="btn-get-started scrollto">
+                            <i class="fa fa-github fa-lg"></i>
+                            Login with Github
+                        </a>
+                        <!-- <a class="left-header-images-link" href="www.github.com" [target]="'_blank'">Hello</a> -->
+                        <!-- <a href="http://example.com">External</a>
                         <div *ngIf="afAuth.user | async as user; else showLogin">
                             <h1>Hello {{ user.displayName }}!</h1>
                             <button (click)="logout()">Logout</button>
                         </div>
                         <ng-template #showLogin>
-                            <button type="button" class="btn-get-started scrollto" (click)="login()">
+                            <button type="button" class="btn-get-started scrollto" (click)="login()" >
                                 <i class="fa fa-github fa-lg"></i>
-                                Login with Github</button>
-                            <!-- <button (click)="login()">Login with Google</button> -->
-                        </ng-template>
+                                Login with Github</button> -->
+                        <!-- <button (click)="login()">Login with Google</button> -->
+                        <!-- </ng-template> -->
                     </div>
                 </div>
 

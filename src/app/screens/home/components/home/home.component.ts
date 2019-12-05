@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { auth } from "firebase/app";
 import { Router } from "@angular/router";
+import { GithubauthService } from "src/app/githubauth.service";
 
 @Component({
   selector: "app-home",
@@ -10,7 +11,11 @@ import { Router } from "@angular/router";
 })
 export class HomeComponent implements OnInit {
   showAlert = false;
-  constructor(public afAuth: AngularFireAuth, private router: Router) {}
+  constructor(
+    public afAuth: AngularFireAuth,
+    private router: Router,
+    private github: GithubauthService
+  ) {}
 
   ngOnInit() {
     // if (this.afAuth.user ) {
@@ -20,27 +25,6 @@ export class HomeComponent implements OnInit {
     // }
     // alert(JSON.stringify(this.afAuth.authState));
     // alert("on init");
-    console.log("init" + JSON.stringify(this.afAuth.user));
   }
-  try() {
-    alert("Yes");
-  }
-  ngAfterViewChecked() {
-    console.log("checked" + JSON.stringify(this.afAuth.idToken));
-  }
-  ngAfterViewInit() {
-    console.log("after" + JSON.stringify(this.afAuth.idToken));
-  }
-  ngOnChanges() {
-    console.log("Changes");
-  }
-  signIn() {
-    this.showAlert = true;
-  }
-  login() {
-    this.afAuth.auth.signInWithPopup(new auth.GithubAuthProvider());
-  }
-  logout() {
-    this.afAuth.auth.signOut();
-  }
+
 }
