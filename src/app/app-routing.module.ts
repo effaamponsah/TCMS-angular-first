@@ -9,6 +9,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ClientsScreenComponent } from "./screens/clients/clients-screen/clients-screen.component";
 import { ClientscreenComponent } from "./screens/clients/clientscreen/clientscreen.component";
 import { ClientformComponent } from "./screens/clients/components/clientform/clientform.component";
+import { ProjectscreenComponent } from './screens/projects/projectscreen/projectscreen.component';
 
 const routes: Routes = [
   { path: "hello", component: TestingComponent },
@@ -21,7 +22,7 @@ const routes: Routes = [
       { path: "add", component: ClientformComponent }
     ]
   },
-  { path: "project", component: ProjectsComponent },
+  { path: "projects", component: ProjectscreenComponent },
   { path: "hi", component: DummyComponent },
   { path: "client", component: ClientCardComponent },
   { path: "home", component: HomeComponent },

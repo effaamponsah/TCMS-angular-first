@@ -16,6 +16,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { ClientscreenComponent } from "./screens/clients/clientscreen/clientscreen.component";
 import { ClientformComponent } from "./screens/clients/components/clientform/clientform.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { ProjecttableComponent } from './screens/projects/components/projecttable/projecttable.component';
+import { ProjectscreenComponent } from './screens/projects/projectscreen/projectscreen.component';
 
 // const appRoutes: Routes = [
 //   // { path: "customer", component: CustomersComponent },
@@ -34,7 +36,9 @@ import { ReactiveFormsModule } from "@angular/forms";
     ClientCardComponent,
     ClientsScreenComponent,
     ClientscreenComponent,
-    ClientformComponent
+    ClientformComponent,
+    ProjecttableComponent,
+    ProjectscreenComponent
   ],
   imports: [
     ReactiveFormsModule,
