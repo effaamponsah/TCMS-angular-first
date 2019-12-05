@@ -4,7 +4,6 @@ import { Client } from "../client";
 import { Observable } from "rxjs";
 import { ClientserviceService } from "src/app/clientservice.service";
 import { Router } from "@angular/router";
-import { AngularFireAuth } from "@angular/fire/auth";
 
 @Component({
   selector: "app-clients-screen",
@@ -16,7 +15,6 @@ export class ClientsScreenComponent implements OnInit {
   constructor(
     private clientService: ClientserviceService,
     private router: Router,
-    private atuh: AngularFireAuth
   ) {}
   customersObservable: Observable<Client[]>;
   retrievedClients: Array<Client> = [];
@@ -24,8 +22,6 @@ export class ClientsScreenComponent implements OnInit {
     this.clientService.getClients().subscribe(client => {
       this.retrievedClients = client;
     });
-
-    console.log(JSON.stringify(this.atuh.user))
   }
 
   addClient() {
