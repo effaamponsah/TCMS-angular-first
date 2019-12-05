@@ -64,16 +64,25 @@
                 <div class="intro-info">
                     <h2>Turntabl<br><span>Clients</span><br>Management Sytem</h2>
                     <div>
-                        <button type="button" class="btn-get-started scrollto" (click)="signIn()">
+                        <!-- <button type="button" class="btn-get-started scrollto" (click)="signIn()">
                             <i class="fa fa-github fa-lg"></i>
-                            Login with Github</button>
+                            Login with Github</button> -->
                         <!-- <a routerLink="/clients" class="btn-get-started scrollto">
                             <i class="fa fa-github fa-lg"></i> Login with Github</a> -->
                         <!-- <a href="/projects" class="btn-services scrollto">Projects</a> -->
                         <!-- <a href="index.html" class="btn btn-facebook btn-user btn-block">
                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                         </a> -->
-
+                        <div *ngIf="afAuth.user | async as user; else showLogin">
+                            <h1>Hello {{ user.displayName }}!</h1>
+                            <button (click)="logout()">Logout</button>
+                        </div>
+                        <ng-template #showLogin>
+                            <button type="button" class="btn-get-started scrollto" (click)="login()">
+                                <i class="fa fa-github fa-lg"></i>
+                                Login with Github</button>
+                            <!-- <button (click)="login()">Login with Google</button> -->
+                        </ng-template>
                     </div>
                 </div>
 
