@@ -18,9 +18,6 @@ import { ClientformComponent } from "./screens/clients/components/clientform/cli
 import { ReactiveFormsModule } from "@angular/forms";
 import { ProjecttableComponent } from "./screens/projects/components/projecttable/projecttable.component";
 import { ProjectscreenComponent } from "./screens/projects/projectscreen/projectscreen.component";
-import { AngularFireModule } from "@angular/fire";
-import { environment } from "../environments/environment";
-import { AngularFireAuthModule } from '@angular/fire/auth';
 // const appRoutes: Routes = [
 //   // { path: "customer", component: CustomersComponent },
 //   // { path: "projects", component: ProjectsComponent },
@@ -47,9 +44,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase, 'TCMS'),
-    AngularFireAuthModule,
+    HttpClientModule
     // ReactiveFormsModule
   ],
   providers: [],
